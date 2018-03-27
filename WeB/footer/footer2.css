@@ -1,0 +1,35 @@
+.foot{
+	margin-top: 100%;
+	
+}
+#footer{
+	background-color: #363636;
+	height: 320px;
+	clear:both;
+	color: #efe5d0;
+	text-align: center;
+	padding: 15px;
+	font-size: 90%
+	margin-top: 100%;
+}
+
+#footer table{
+	padding: 5px;
+	list-style-type: none;
+	width: 100%;
+
+}
+
+
+
+
+#footer a{
+	text-decoration: none;
+	font-family: Arial;
+	padding: .2em 1em;
+	color: #efe5d0;
+}
+
+#footer a:hover{
+	text-decoration: underline;
+}
