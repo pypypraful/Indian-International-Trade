@@ -1,0 +1,33 @@
+.search{
+  padding-top:62px;
+}
+form.search input[type=text] {
+    padding: 20px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    width: 95%;
+    background: #f1f1f1;
+}
+
+form.search button {
+    float: left;
+    width: 5%;
+    padding: 8px;
+    background: gray;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none;
+    cursor: pointer;
+}
+
+form.search button:hover {
+    background: black;
+}
+
+form.search::after {
+    content: "";
+    clear: both;
+    display: table;
+}
