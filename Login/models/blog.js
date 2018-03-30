@@ -25,8 +25,8 @@ var blogSchema = mongoose.Schema({
   }
 });
 
-module.exports.blog = mongoose.model('blog', blogSchema);
+module.exports = mongoose.model('blog', blogSchema);
 
-module.exports.createBlog = function(newBlog, callback){
-    newBlog.save(callback);
-}
+// module.exports.createBlog = function(newBlog, callback){
+//     newBlog.save(callback);
+// }

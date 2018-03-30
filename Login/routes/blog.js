@@ -51,21 +51,33 @@ router.post('/add-blog',function(req,res){
       valid: false,
     });
 
-    blog.createBlog(newBlog, function(err,user){
-      if(err) throw err;
-      //console.log(blog);
-    });
+    newBlog.save().then((savedBlog) => {
+      req.flash("success_msg",'Your blog has been submitted');
+      res.redirect('/blog/add-blog');
+    }, (error) => {
+      if(error) throw error;     
+    })
+    // blog.createBlog(newBlog, function(err,user){
+    //   if(err) throw err;
+    //   //console.log(blog);
+    // });
 
-    req.flash("success_msg",'Your blog has been submitted');
+    // req.flash("success_msg",'Your blog has been submitted');
 
-    res.redirect('/blog/add-blog');
+    // res.redirect('/blog/add-blog');
   }
 });
 
-router.get('/trending-blog',ensureAuthenticated,function(req, res){
-  res.render('trending-blog');
-});
+router.get('/trending-blog' ,function(req, res){
+   blog.find({
+     valid: true
+   }).then((blogs) => {
+     console.log("Tranding Blog", blogs);
+     res.send(blogs);
+   },(error) => {
+    if(error) throw error;
+  });
 
-getValidBlogs
+});
 
 module.exports = router;
