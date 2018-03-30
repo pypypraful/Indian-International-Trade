@@ -17,6 +17,7 @@ var db = mongoose.connection;
 var routes = require('./routes/index');
 var users = require('./routes/users');
 var blog = require('./routes/blog');
+var adminRoute = require('./routes/adminPage');
 
 //Init App
 var app = express();
@@ -75,9 +76,12 @@ app.use(function(req,res,next){
   next();
 });
 
+app.use('/admin',adminRoute);
 app.use('/',routes);
 app.use('/users',users);
 app.use('/blog',blog);
+
+
 
 //Set Port
 app.set('port',(process.env.PORT || 3000));

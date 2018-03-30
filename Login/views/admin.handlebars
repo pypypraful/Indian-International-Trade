@@ -1,0 +1,12 @@
+<div>
+{{#each blogsToVerify}}
+    <div style="margin: 20px">
+        <strong>Name</strong> {{this.name}} <br>
+        <strong>Title</strong>: {{this.title}} <br>
+        <strong>Category</strong>: {{this.category}} <br>
+        <strong>Description</strong>: {{this.description}} <br>
+        <button>Approve</button> &nbsp;&nbsp;&nbsp;<button>Reject</button>
+    </div>
+  {{!-- <p>{{@index}}. {{this}}</p> --}}
+{{/each}}
+</div>
