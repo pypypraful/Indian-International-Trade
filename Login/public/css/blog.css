@@ -13,7 +13,7 @@ body {
   font-weight: 300;
 }
 
-#login-box {
+#blog-box {
   position: relative;
   margin: 5% auto;
   width:800px;
@@ -23,7 +23,7 @@ body {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
 }
 
-.left {
+.left1 {
   position: absolute;
   top: 0;
   left: 0;
@@ -39,8 +39,7 @@ h1 {
   font-size: 28px;
 }
 
-input[type="text"],
-input[type="password"] {
+input[type="text"] {
   display: block;
   box-sizing: border-box;
   margin-bottom: 20px;
@@ -55,8 +54,7 @@ input[type="password"] {
   transition: 0.2s ease;
 }
 
-input[type="text"]:focus,
-input[type="password"]:focus {
+input[type="text"]:focus {
   border-bottom: 2px solid #16a085;
   color: #16a085;
   transition: 0.2s ease;
@@ -148,4 +146,25 @@ input[type="submit"]:active {
 .blog-category:hover .blog-category-content,
 .blog-language:hover .blog-language-content {
     display: block;
+}
+.black select   { color: #fff; }
+.black   { background-color: #000; }
+.rounded {
+   -webkit-border-radius: 20px;
+   -moz-border-radius: 20px;
+   border-radius: 20px;
+}
+.styled-select {
+   background: url(http://i62.tinypic.com/15xvbd5.png) no-repeat 96% 0;
+   height: 29px;
+   overflow: hidden;
+   width: 240px;
+}
+.styled-select select {
+   background: transparent;
+   border: none;
+   font-size: 14px;
+   height: 29px;
+   padding: 5px; /* If you add too much padding here, the options won't show in IE */
+   width: 268px;
 }
