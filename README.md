@@ -11,7 +11,7 @@ Deployment:
 * First install MongoDB from its official website.
 * Create a folder in C:/ with the name 'data'. Inside data, create another folder 'db'.
 * Go to the directory where mongodb is installed. Open command prompt in that directory and start mongo database by typing mongod
-* Open Project 'TESLA1' folder and open command prompt in that directory.
+* Open Project 'Tesla1' folder and open command prompt in that directory.
 * First install all the dependencies by typing 'npm install' in cmd.
 * Now type 'npm start' in cmd and hit Enter.
 * The Web-App can be viewed at "localhost:3000".
