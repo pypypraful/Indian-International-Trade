@@ -1,0 +1,240 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Indian International Trade</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://mdbootstrap.com/previews/docs/latest/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Material Design Bootstrap -->
+    <link href="https://mdbootstrap.com/previews/docs/latest/css/mdb.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/home.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/Login.css">
+    <link rel="stylesheet" href="/css/blog.css">
+    <link rel="stylesheet" href="/css/Signup.css">
+    <link rel="stylesheet" href="/css/shop-home.css">
+    <link rel="stylesheet" href="/css/shop.css">
+    <link rel="stylesheet" href="/css/shop-items.css">
+    <link rel="stylesheet" href="/css/blognote.css">
+
+
+
+
+
+</head>
+<body class="fixed-sn black-skin" style="background-image: url(/images/wallpaper.jpg)">
+<!--Double navigation-->
+    <header>
+        <!-- Sidebar navigation -->
+        <div id="slide-out" class="side-nav sn-bg-4 fixed">
+            <ul class="custom-scrollbar">
+                <!-- Logo -->
+                <img src="/images/logo2.png" style="width: 70%; height: 40%; margin-left: 28px;">
+                <!--/. Logo -->
+                <!--Social-->
+                <li>
+                    <ul class="social">
+                        <li><a href="#" class="icons-sm fb-ic"><i class="fa fa-facebook"> </i></a></li>
+                        <li><a href="#" class="icons-sm gplus-ic"><i class="fa fa-google-plus"> </i></a></li>
+                        <li><a href="#" class="icons-sm tw-ic"><i class="fa fa-twitter"> </i></a></li>
+                    </ul>
+                </li>
+                <!--/Social-->
+                <!-- Side navigation links -->
+                <li>
+                    <ul class="collapsible collapsible-accordion">
+                        <li><a class="collapsible-header waves-effect arrow-r"><i class="fa fa-chevron-right"></i>Ancient Ages<i class="fa fa-angle-down rotate-icon"></i></a>
+                            <div class="collapsible-body">
+                                <ul class="list-unstyled">
+                                    <li><a href="/categoryblog/ancient/Gupta's Period" class="waves-effect">Gupta's Period</a>
+                                    </li>
+                                    <li><a href="/categoryblog/ancient/Mauryan Period" class="waves-effect">Mauryan Period</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a class="collapsible-header waves-effect arrow-r"><i class="fa fa-hand-pointer-o"></i>Medieval Ages<i class="fa fa-angle-down rotate-icon"></i></a>
+                            <div class="collapsible-body">
+                                <ul class="list-unstyled">
+                                    <li><a href="/categoryblog/medieval" class="waves-effect">Before British</a>
+                                    </li>
+                                    <li><a href="/categoryblog/medieval" class="waves-effect">During British</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a class="collapsible-header waves-effect arrow-r"><i class="fa fa-eye"></i>Modern Times<i class="fa fa-angle-down rotate-icon"></i></a>
+                            <div class="collapsible-body">
+                                <ul class="list-unstyled">
+                                    <li><a href="/categoryblog/modern" class="waves-effect">After Independence</a>
+                                    </li>
+                                    <li><a href="/categoryblog/modern" class="waves-effect">During Emergency Period</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <!--/. Side navigation links -->
+            </ul>
+            <div class="sidenav-bg mask-strong"></div>
+        </div>
+        <!--/. Sidebar navigation -->
+        <!-- Navbar -->
+        <nav class="navbar fixed-top navbar-toggleable-md navbar-expand-lg scrolling-navbar double-nav">
+            <!-- SideNav slide-out button -->
+            <div class="float-left">
+                <a href="#" data-activates="slide-out" class="button-collapse"><i class="fa fa-bars"></i></a>
+            </div>
+            <!-- Breadcrumb-->
+            <div class="breadcrumb-dn mr-auto">
+                <a href="/"><p>Indian International Trade</p></a>
+            </div>
+            <ul class="nav navbar-nav nav-flex-icons ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="../blog/add-blog"><i class="fa fa-edit"></i> <span class="clearfix d-none d-sm-inline-block">Add Blog</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/blog/trending-blog"><i class="fa fa-book"></i> <span class="clearfix d-none d-sm-inline-block">Trending Blogs</span></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Shop
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="/shop/shop">Buy Books</a>
+                        <a class="dropdown-item" href="/shop/shop">Rent Books</a>
+                        <a class="dropdown-item" href="/shop/shop">Donate Books</a>
+                    </div>
+                </li>
+                {{#if user}}
+                <li class="nav-item">
+                    <a class="nav-link" href="/users/logout"><i class="fa fa-user"></i> <span class="clearfix d-none d-sm-inline-block">Logout</span></a>
+                </li>
+                {{else}}
+                <li class="nav-item">
+                    <a class="nav-link" href="/users/login"><i class="fa fa-user"></i> <span class="clearfix d-none d-sm-inline-block">Login</span></a>
+                </li>
+                {{/if}}
+            </ul>
+        </nav>
+        <!-- /.Navbar -->
+    </header>
+
+    <!-- Search Bar-->
+    <form class="search" action="#">
+      <input type="text" placeholder="Search.." name="search">
+      <button type="submit"><i class="fa fa-search"></i></button>
+    </form>
+
+
+    {{#if success_msg}}
+        <div class="alert alert-success">{{success_msg}}</div>
+    {{/if}}
+    {{#if error_msg}}
+        <div class="alert alert-danger">{{error_msg}}</div>
+    {{/if}}
+    {{#if error}}
+        <div class="alert alert-danger">{{error}}</div>
+    {{/if}}
+
+  {{{body}}}
+
+
+
+    <!---footer-->
+    <div id="footer">
+                    <div class="address">
+                          <h2>Indian International Trade</h2>
+                          <p>An Encyclopedia on India's Trade</p>
+                          <p>Address</p>
+
+
+
+                    </div>
+
+                        <table>
+
+                           <tr>
+                                <th> IIT </th>
+                                <th> ABOUT </th>
+                                <th>  HELP </th>
+                                <th>  CONNECT </th>
+                          </tr>
+                          <tr>
+                                <th> <br> </th>
+                                <th> <br> </th>
+                                <th> <br>  </th>
+                                <th>  <br> </th>
+                          </tr>
+                          <tr>
+                            <td><a href="">Home</a></td>
+                            <td><a href="">About Us</a> </td>
+                            <td><a href="">Help Center</a> </td>
+                            <td><a href=""><i class="fa fa-facebook-official" style="font-size: 30px"></i></a></td>
+                          </tr>
+
+                          <tr>
+                            <td><a href="">Coverage</a></td>
+                            <td><a href="">Blog </a></td>
+                            <td><a href="">Get Started </a></td>
+                            <td><a href=""><i class="fa fa-google-plus-official" style="font-size: 30px"></i></a></td>
+                          </tr>
+
+                          <tr>
+                            <td><a href="">Pricing</a></td>
+                            <td><a href="">Privacy Policy </a></td>
+                            <td><a href="">Contact Us</a> </td>
+                            <td><a href=""><i class="fa fa-instagram" style="font-size: 30px"></i></a></td>
+
+                          </tr>
+
+                          <tr>
+                            <td><a href="">Bug</a></td>
+                            <td><a href="">Terms of Service</a> </td>
+                            <td></td>
+                            <td><a href=""><i class="fa fa-twitter" style="font-size: 30px"></i></a></td>
+                          </tr>
+                      </table>
+                      <hr>
+
+                <footer> Copyright &copy; 2018.All Rights Reserved. </footer>
+                     </div>
+
+        <!--footer ended-->
+
+
+    <!-- SCRIPTS -->
+    <!-- JQuery -->
+    <script type="text/javascript" src="https://mdbootstrap.com/previews/docs/latest/js/jquery-3.2.1.min.js"></script>
+
+    <!-- Tooltips -->
+    <script type="text/javascript" src="https://mdbootstrap.com/previews/docs/latest/js/popper.min.js"></script>
+
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="https://mdbootstrap.com/previews/docs/latest/js/bootstrap.min.js"></script>
+
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="https://mdbootstrap.com/previews/docs/latest/js/mdb.min.js"></script>
+    <script>
+
+        // SideNav Initialization
+        $(".button-collapse").sideNav();
+
+        new WOW().init();
+
+    </script>
+    <script src="/js/shop.js"></script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,19 @@
+{{#if blogs}}
+  {{#each blogs }}
+<div id="blognote">
+  <div class="photo">
+    <img src="/images/userblindphoto.jpg" alt="book2-photo">
+    <p>{{name}}</p>
+  </div>
+
+  <div class="note">
+    <h3>{{title}}</h3>
+    <h5>{{description}}</h5>
+    <hr>
+    <div class='read'>{{blogtext}}</div>
+    <a class="btn btn-secondary" href="/blog/blogpage/{{_id}}" role="button">Read More..</a>
+    <a class="btn btn-secondary" href="/blog/upvote/{{_id}}" role="button">Upvotes {{upvote}}</a>
+  </div>
+  </div>
+  {{/each}}
+{{/if}}

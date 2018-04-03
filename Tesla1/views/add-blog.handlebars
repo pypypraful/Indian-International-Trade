@@ -1,0 +1,43 @@
+<div id="blog-box">
+          <div class="left1">
+            <h1>Write Your Blog here..</h1>
+            {{#if errors}}
+            {{#each errors}}
+              <div class="alert alert-danger">{{msg}}</div>{{/each}}
+            {{/if}}
+            <form method="post" action="/blog/add-blog">
+            <input class="blog" type="text" name="name" placeholder="Author Name" />
+            <input class="blog" type="text" name="title" placeholder="Your Blog's Title" />
+            <input class="blog" type="text" name="language" placeholder="Your Blog's Language" />
+            <input class="blog" type="text" name="category" placeholder="Your Blog's Category" />
+
+
+
+          <!--  <div class="blog-category">
+                <button class="blog-category-btn">Choose Your Blog category..</button>
+                <div class="blog-category-content">
+                    <a>Link 1</a>
+                    <a>Link 2</a>
+                    <a>Link 3</a>
+                </div>
+            </div>
+            <br>
+            <div class="blog-language">
+                <button class="blog-language-btn">Choose Your Blog Language..</button>
+                <div class="blog-language-content">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                </div>
+            </div>-->
+
+            
+            <input class="blog" type="text" name="description" placeholder="Your Blog's Description" />
+            <textarea name="blogtext" rows="15" cols="72" style="color: gray">Write Your Blog Here..</textarea><br>
+
+
+            <input class="blog" type="submit" name="submit" value="Submit" />
+            </div>
+          </form>
+
+        </div>

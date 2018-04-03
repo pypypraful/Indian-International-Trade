@@ -1,0 +1,13 @@
+{{#if blogs}}
+{{#each blogs }}
+<div id="blog-box">
+          <div class="left1">
+            <h1 style="text-align:center">{{title}}</h1>
+            <h6 style="text-align:center">{{description}}</h6>
+            <p style="text-align:right">Written By: {{name}}</p>
+            <hr>
+            {{blogtext}}
+            </div>
+        </div>
+{{/each}}
+{{/if}}

@@ -1,0 +1,71 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500);
+*:focus {
+  outline: none;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #DDD;
+  font-size: 16px;
+  color: #222;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
+
+#blognote {
+  position: relative;
+  margin: 5% auto;
+  width: 1200px;
+  height: 250px;
+  background: #FFF;
+  border-radius: 2px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.photo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  padding: 10px;
+  width: 200px;
+  height: 400px;
+}
+
+h3 {
+  font-weight: 300;
+  font-size: 28px;
+  text-align: center;
+}
+h5{text-align: center;}
+.note {
+  position: absolute;
+  top: 0;
+  right: 0;
+  box-sizing: border-box;
+  padding: 10px;
+  padding-top: 0 !important;
+  width: 950px;
+  height: 400px;
+  background: url('https://goo.gl/YbktSj');
+  background-size: cover;
+  background-position: center;
+  border-radius: 0 2px 2px 0;
+}
+
+.right .loginwith {
+  display: block;
+  margin-bottom: 40px;
+  font-size: 28px;
+  color: #FFF;
+  text-align: center;
+}
+
+.read {
+  overflow: hidden;
+text-overflow: ellipsis;
+-webkit-line-clamp: 4;
+display: -webkit-box;
+-webkit-box-orient: vertical;
+}
